@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Blue_Pill_Red_Pill" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAe-vh-dju">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2it-tA-jF9">
+                                <rect key="frame" x="30" y="362" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="sn0-V3-0dj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.20617828925307635" green="0.64590213737761448" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <menu key="menu" id="ana-H8-nyE">
+                                    <children>
+                                        <command title="Item 1" id="02u-T4-kyy"/>
+                                        <command title="Item 2" id="PvD-Nk-UAB"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Take the Blue Pill"/>
+                                <buttonConfiguration key="configuration" style="filled" image="pills" catalog="system" title=" Take the Blue Pill">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                    <color key="baseBackgroundColor" red="0.062745098039215685" green="0.43137254901960786" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BSi-Vg-7IV">
+                                <rect key="frame" x="30" y="446" width="354" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JNL-TI-CKy"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <menu key="menu" id="SPM-Lw-8ay">
+                                    <children>
+                                        <command title="Item 1" id="VCx-MW-PHO"/>
+                                        <command title="Item 2" id="1EP-Yt-cmr"/>
+                                    </children>
+                                </menu>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="pills.fill" catalog="system" title=" Take the Red Pill">
+                                    <color key="baseBackgroundColor" red="0.91764705882352937" green="0.24705882352941178" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2it-tA-jF9" secondAttribute="trailing" constant="30" id="4G5-aj-Xf2"/>
+                            <constraint firstItem="BSi-Vg-7IV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Cej-U0-Kjw"/>
+                            <constraint firstItem="GAe-vh-dju" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EqS-Pg-paX"/>
+                            <constraint firstItem="2it-tA-jF9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="LoG-1c-UJA"/>
+                            <constraint firstItem="GAe-vh-dju" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MsR-hu-fX3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BSi-Vg-7IV" secondAttribute="trailing" constant="30" id="Oms-wT-uip"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GAe-vh-dju" secondAttribute="trailing" id="dZV-Ls-38b"/>
+                            <constraint firstAttribute="bottom" secondItem="GAe-vh-dju" secondAttribute="bottom" id="fIz-xx-opn"/>
+                            <constraint firstItem="2it-tA-jF9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="318" id="irc-IS-LNk"/>
+                            <constraint firstItem="BSi-Vg-7IV" firstAttribute="top" secondItem="2it-tA-jF9" secondAttribute="bottom" constant="24" id="txU-Yy-gaP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bluePill" destination="2it-tA-jF9" id="bET-9X-SZO"/>
+                        <outlet property="codeRain" destination="GAe-vh-dju" id="qIN-ii-MyD"/>
+                        <outlet property="redPill" destination="BSi-Vg-7IV" id="PP2-Wu-MHT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pills" catalog="system" width="128" height="106"/>
+        <image name="pills.fill" catalog="system" width="128" height="106"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
